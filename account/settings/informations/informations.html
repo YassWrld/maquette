@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramètres</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_details">
+        <!-- <i class="bx bxl-audible icon"></i> -->
+        <div class="logo_name">LOGO</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Rechercher..." />
+          <span class="tooltip">Rechercher</span>
+        </li>
+        <li>
+          <a href="../courses/courses.html">
+            <i class="bx bx-book"></i>
+            <span class="link_name">Cours</span>
+          </a>
+          <span class="tooltip">Cours</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="link_name">Statistiques</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <span class="tooltip">Chat</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-camera"></i>
+            <span class="link_name">Visio</span>
+          </a>
+          <span class="tooltip">Visio</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Paramètres</span>
+          </a>
+          <span class="tooltip">Paramètres</span>
+        </li>
+        <li class="profile">
+          <div class="profile_details">
+            <img src="../../img/1.svg" alt="profile image" />
+            <div class="profile_content">
+              <div class="name">Nom Prénom</div>
+              <div class="designation">Role</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">Informations personelles</div>
+      <div class="infos">
+        <div class="name">
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" />
+            <label for="name">Nom</label>
+          </div>
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" />
+            <label for="name">Prénom</label>
+          </div>
+        </div>
+        <div class="inputGroup">
+          <input type="text" required="" autocomplete="off" />
+          <label for="name">Email</label>
+        </div>
+        <div class="inputGroup">
+          <input type="text" required="" autocomplete="off" />
+          <label for="name">Numéro de téléphone</label>
+        </div>
+        <div class="date">
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" />
+            <label for="name">Jour</label>
+          </div>
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" />
+            <label for="name">Mois</label>
+          </div>
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" />
+            <label for="name">Année</label>
+          </div>
+        </div>
+        <div class="newsletter">
+          <label for="cbx" class="cbx">
+            <div class="checkmark">
+              <input type="checkbox" id="cbx" checked="checked" />
+              <div class="flip">
+                <div class="front"></div>
+                <div class="back">
+                  <svg viewBox="0 0 16 14" height="14" width="16">
+                    <path d="M2 8.5L6 12.5L14 1.5"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </label>
+          <p>S'abooner a la news-letter</p>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

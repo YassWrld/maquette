@@ -1,0 +1,151 @@
+@import url("https://fonts.cdnfonts.com/css/tt-commons");
+
+body {
+  margin: auto;
+  font-family: "TT Commons", sans-serif;
+  color: white;
+}
+
+nav {
+  background: #0063a4;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#login {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: #ff0b80;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#login:hover {
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: #ff0b80;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.navigation > ul > li > a:hover {
+  color: #ff0b80;
+  border-bottom: #ff0b80 3px solid;
+}
+.navigation > ul > li > a {
+  display: block;
+  padding: 20px 35px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.dropdown li > a {
+  display: block;
+  padding: 20px 25px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 180%;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border: 1px black solid; */
+  background-color: #fff;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+.logo {
+}
+
+main {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  background: #0063a4;
+  justify-content: space-evenly;
+}
+
+.informations a {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: #ff0b80;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-weight: 450;
+  margin: 10px;
+}
+
+.informations h1 {
+  font-size: 65px;
+  margin: auto;
+}
+
+.informations h3 {
+  font-size: 36px;
+}
+
+.informations p {
+  font-size: 24px;
+}
+
+.informations h3 {
+}
+.informations {
+  margin-left: 200px;
+}
+
+.stats {
+  background-color: #ff0b80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 150px;
+}
+
+.stat {
+  align-items: center;
+  text-align: center;
+}
+
+.stat h1 {
+  font-size: 60px;
+  color: white;
+  margin: auto;
+}
+
+.stat p {
+  font-size: 32px;
+  font-weight: 500;
+  margin: auto;
+}

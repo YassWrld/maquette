@@ -301,162 +301,31 @@ body {
   width: calc(100% - 250px);
 }
 
-.infos {
+.factures {
+  width: 80%;
+}
+.facture {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 500px;
-}
-
-.name {
-  display: flex;
-  gap: 20px;
-}
-
-.date {
-  display: flex;
-  gap: 20px;
-}
-.inputGroup {
-  font-family: "Segoe UI", sans-serif;
-  margin: 1em 0 1em 0;
-  max-width: 190px;
-  position: relative;
-}
-
-.inputGroup input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid rgb(200, 200, 200);
-  background-color: transparent;
-  border-radius: 20px;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
   width: 100%;
 }
 
-.inputGroup label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
+.date {
+  width: 25%;
 }
 
-.inputGroup :is(input:focus, input:valid) ~ label {
-  transform: translateY(-50%) scale(0.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
+.bill_number {
+  width: 25%;
 }
 
-.inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
-}
-
-.cbx {
-  margin-right: 20px;
-  -webkit-perspective: 20;
-  perspective: 20;
-  position: absolute;
-  margin: -12px;
-  border: 2px solid #e8e8eb;
-  background: #e8e8eb;
-  border-radius: 4px;
-  transform: translate3d(0, 0, 0);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.cbx:hover {
-  border-color: #0b76ef;
-}
-
-.flip {
-  display: block;
-  transition: all 0.4s ease;
-  transform-style: preserve-3d;
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-
-#cbx {
-  display: none;
-}
-
-#cbx:checked + .cbx {
-  border-color: #0b76ef;
-}
-
-#cbx:checked + .flip {
-  transform: rotateY(180deg);
-}
-
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-}
-
-.front {
-  background: #fff;
-  z-index: 1;
-}
-
-.back {
-  transform: rotateY(180deg);
-  background: #0b76ef;
-  text-align: center;
-  color: #fff;
-  line-height: 20px;
-  box-shadow: 0 0 0 1px #0b76ef;
-}
-
-.back svg {
-  margin-top: 3px;
-  fill: none;
-}
-
-.back svg path {
-  stroke: #fff;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-}
-
-.newsletter p {
-  margin-left: 30px;
-}
-
-.btn {
-  border-radius: 15px;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 22px;
-}
-
-#sauvegarde {
-  margin-top: 20px;
-  color: #0067ac;
-  border: #0063a4 2px solid;
-}
-
-#mdp {
-  margin-top: 20px;
-  color: red;
-  border: red 2px solid;
+.price {
+  width: 25%;
 }

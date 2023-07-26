@@ -6,6 +6,12 @@
     <title>Paramètres</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -52,7 +58,7 @@
           <span class="tooltip">Visio</span>
         </li>
         <li>
-          <a href="../../settings/settings.html">
+          <a href="#">
             <i class="bx bx-cog"></i>
             <span class="link_name">Paramètres</span>
           </a>
@@ -71,32 +77,30 @@
       </ul>
     </div>
     <section class="home-section">
-      <div class="text">Factures</div>
-      <div class="factures">
-        <div class="facture">
-          <div class="date">Date</div>
-          <div class="bill_number">Numéro de facture</div>
-          <div class="price">Montant</div>
-          <div class="download">
-            <a href="">telechargement</a>
+      <div class="container">
+        <h1>Qui est-ce ?</h1>
+        <div class="users">
+          <div class="card">
+            <img src="../../../img/7.svg" alt="" />
+            <h2>Prenom</h2>
+            <p>Parent</p>
+          </div>
+          <div class="card">
+            <img src="../../../img/10.svg" alt="" />
+            <h2>Prenom</h2>
+            <p>Enfant</p>
+          </div>
+          <div class="new">
+            <button class="addIcon">
+              <i class="fas fa-plus-circle"></i>
+              <span
+                >Ajouter un <br />
+                enfant</span
+              >
+            </button>
           </div>
         </div>
-        <div class="facture">
-          <div class="date">20 Septembre 2023</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">9000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
-        </div>
-        <div class="facture">
-          <div class="date">11 Janvier 2024</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">1000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
-        </div>
+        <a class="manage" href="">Gérer les profils</a>
       </div>
     </section>
     <!-- Scripts -->

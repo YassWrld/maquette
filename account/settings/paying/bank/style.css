@@ -301,139 +301,83 @@ body {
   width: calc(100% - 250px);
 }
 
-.subscription {
+.wrapper {
+  min-width: 700px;
+  margin: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 15px;
   padding: 20px;
   background: #fff;
-  max-width: 60%;
+}
+
+.bank_info {
+}
+
+.paiement {
   display: flex;
   flex-direction: column;
+  padding: 10px 50px;
 }
 
-.formule {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: #e4e9f7;
-  padding: 5px 20px;
+.paiement a {
+  border-radius: 10px;
+  border: #0063a4 3px solid;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  color: #0063a4;
+}
+
+.paiement p {
   margin-top: 15px;
+  border-radius: 10px;
+  border: black 3px solid;
+  padding: 10px;
+  font-size: 22px;
 }
 
-.newprice {
-  display: flex;
-  align-items: center;
-}
-
-.subscription > h2,
-.subscription > p {
-  margin-top: 15px;
-}
-
-.phone {
-  display: flex;
-  align-items: center;
-}
-
-.phone a {
-  margin-left: 5px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.subscription > h3 {
-  color: red;
-}
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
-
-#pricing {
-  width: 989px;
-  margin: 100px auto;
-  font-family: "Open Sans", Helvetica;
-}
-
-.price_card {
-  width: 300px;
-  background: rgb(255, 255, 255);
-  display: inline-table;
-  top: 0;
-}
-.price_card:not(:last-child) {
-  margin-right: 40px;
-}
-.header {
-  color: rgb(255, 255, 255);
-}
-.alpha .header {
-  background: rgb(245, 166, 35);
-}
-.bravo .header {
-  background: rgb(246, 77, 77);
-}
-.charlie .header {
-  background: rgb(48, 219, 181);
-}
-.price {
-  width: 100%;
-  font-size: 60px;
-  font-weight: 300;
-  display: block;
-  text-align: center;
-  padding: 30px 0 10px;
-}
-.name {
-  width: 100%;
-  font-size: 15px;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  padding: 0 0 30px;
-}
-.features {
-  list-style: none;
-  text-align: center;
-  color: rgb(138, 138, 138);
-  margin: 0;
-  padding: 0;
-}
-.features li {
-  margin: 0 35px;
-  padding: 20px 15px;
-  width: 200px;
-}
-.features li:not(:last-child) {
-  border: 1px solid rgb(242, 242, 242);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
-button {
-  color: rgb(255, 255, 255);
-  border: 0;
+form {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  height: 40px;
-  width: 200px;
+}
+
+label {
   display: block;
-  font-weight: 700;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: 20px auto 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-.alpha button {
-  background: rgb(245, 166, 35);
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
 }
-.bravo button {
-  background: rgb(246, 77, 77);
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
-.charlie button {
-  background: rgb(48, 219, 181);
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
-.tip {
-  font-family: "Indie Flower";
-  position: absolute;
-  color: rgb(117, 117, 117);
-  margin: 10px 5px;
+
+.wrapper div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bank_info {
+  border-radius: 10px;
+  background: #0063a4;
+  padding: 15px;
+  color: white;
 }

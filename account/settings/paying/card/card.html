@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paramètres</title>
     <link rel="stylesheet" href="style.css" />
+    2
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,100"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -52,7 +59,7 @@
           <span class="tooltip">Visio</span>
         </li>
         <li>
-          <a href="../../settings/settings.html">
+          <a href="../../../settings/settings.html">
             <i class="bx bx-cog"></i>
             <span class="link_name">Paramètres</span>
           </a>
@@ -60,7 +67,7 @@
         </li>
         <li class="profile">
           <div class="profile_details">
-            <img src="../../img/1.svg" alt="profile image" />
+            <img src="../../../img/1.svg" alt="profile image" />
             <div class="profile_content">
               <div class="name">Nom Prénom</div>
               <div class="designation">Role</div>
@@ -71,35 +78,32 @@
       </ul>
     </div>
     <section class="home-section">
-      <div class="text">Factures</div>
-      <div class="factures">
-        <div class="facture">
-          <div class="date">Date</div>
-          <div class="bill_number">Numéro de facture</div>
-          <div class="price">Montant</div>
-          <div class="download">
-            <a href="">telechargement</a>
-          </div>
-        </div>
-        <div class="facture">
-          <div class="date">20 Septembre 2023</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">9000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
-        </div>
-        <div class="facture">
-          <div class="date">11 Janvier 2024</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">1000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
-        </div>
+      <div class="wrapper">
+        <h1>Formulaire de carte de crédit</h1>
+        <form action="/traiter-paiement" method="post">
+          <label for="nom">Nom du titulaire de la carte :</label>
+          <input type="text" id="nom" name="nom" required /><br />
+
+          <label for="numero">Numéro de carte :</label>
+          <input type="text" id="numero" name="numero" required /><br />
+
+          <label for="expiration">Date d'expiration (Mois et année) :</label>
+          <input
+            type="month"
+            id="expiration"
+            name="expiration"
+            min="2023-07"
+            max="2030-12"
+            required
+          /><br />
+
+          <label for="cvv">CVV :</label>
+          <input type="text" id="cvv" name="cvv" required /><br />
+
+          <input type="submit" value="Valider le paiement" />
+        </form>
       </div>
     </section>
-    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>

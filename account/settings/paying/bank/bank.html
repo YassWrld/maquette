@@ -52,7 +52,7 @@
           <span class="tooltip">Visio</span>
         </li>
         <li>
-          <a href="../../settings/settings.html">
+          <a href="../../../settings/settings.html">
             <i class="bx bx-cog"></i>
             <span class="link_name">Paramètres</span>
           </a>
@@ -60,7 +60,7 @@
         </li>
         <li class="profile">
           <div class="profile_details">
-            <img src="../../img/1.svg" alt="profile image" />
+            <img src="../../../img/1.svg" alt="profile image" />
             <div class="profile_content">
               <div class="name">Nom Prénom</div>
               <div class="designation">Role</div>
@@ -71,35 +71,35 @@
       </ul>
     </div>
     <section class="home-section">
-      <div class="text">Factures</div>
-      <div class="factures">
-        <div class="facture">
-          <div class="date">Date</div>
-          <div class="bill_number">Numéro de facture</div>
-          <div class="price">Montant</div>
-          <div class="download">
-            <a href="">telechargement</a>
-          </div>
+      <div class="wrapper">
+        <h1>Informations de paiement :</h1>
+        <div class="bank_info">
+          <h2>Compte bancaire :</h2>
+          <p>Numéro de compte : XXXX XXXX XXXX XXXX</p>
+          <p>Nom d'entreprise : XXXXXX</p>
+          <h2>CCP :</h2>
+          <p>Numéro de compte : XXXX XXXX XXXX XXXX</p>
+          <p>Clée : XX</p>
+          <p>Raison sociale : XXXXXX</p>
         </div>
-        <div class="facture">
-          <div class="date">20 Septembre 2023</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">9000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
+        <div class="paiement">
+          <a href="">Generer mon motif de paiement</a>
+          <p>Motif de paiement</p>
         </div>
-        <div class="facture">
-          <div class="date">11 Janvier 2024</div>
-          <div class="bill_number">XXXXXX</div>
-          <div class="price">1000DA</div>
-          <div class="download">
-            <a href=""><i class="bx bx-download"></i></a>
-          </div>
+        <div class="confirmation">
+          <h2>Deposez votre recu de paiement :</h2>
+          <form
+            action="traitement.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <label for="piece-jointe">Sélectionner un fichier :</label>
+            <input type="file" id="piece-jointe" name="piece-jointe" />
+            <input type="submit" value="Envoyer" />
+          </form>
         </div>
       </div>
     </section>
-    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>

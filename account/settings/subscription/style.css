@@ -410,7 +410,9 @@ body {
   border-left: 0;
   border-right: 0;
 }
-button {
+.button {
+  text-decoration: none;
+  padding: 10px;
   color: rgb(255, 255, 255);
   border: 0;
   border-radius: 5px;
@@ -418,17 +420,17 @@ button {
   width: 200px;
   display: block;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
-  margin: 20px auto 35px;
+  margin: 10px auto 10px;
 }
-.alpha button {
+.alpha .button {
   background: rgb(245, 166, 35);
 }
-.bravo button {
+.bravo .button {
   background: rgb(246, 77, 77);
 }
-.charlie button {
+.charlie .button {
   background: rgb(48, 219, 181);
 }
 .tip {
